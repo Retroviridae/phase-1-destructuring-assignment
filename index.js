@@ -24,13 +24,20 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
-
+expect(bessie).to.exist
+expect(bessie).to.equal("cow")
+expect(dolly).to.exist
+expect(dolly).to.equal("sheep")
+expect(babe).to.exist
+expect(babe).to.equal("pig")
+expect(little).to.exist
+expect(little).to.equal("chicken")
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
-
+const [moo,neigh, baa, oink, cluck] = farmAnimals.split(" ")
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
-
+// const [bessie, ,dolly, babe, little] = [moo, ,baa, oink, cluck]
 // 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
 
 // Arrays
